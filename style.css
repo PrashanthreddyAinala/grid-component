@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    margin: 0px;
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* card style */
+.card {
+    display: block;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 17px hsl(218, 22%, 67%);
+}
+
+/* header style */
+header {
+    background-color: white;
+}
+
+header h1 {
+    padding: 2rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: hsl(179, 62%, 43%);
+}
+header h2 {
+    padding: 2rem;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    color: hsl(71, 73%, 54%);
+}
+header p {
+    margin: 0px;
+    padding: 2rem;
+    padding-top: 0px;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+/* section style */
+section {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+section h3 {
+    margin: 0px;
+    padding: 3rem 2rem 0rem 2rem;
+}
+section p, h1{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section button {
+    background-color:hsl(71, 73%, 54%);
+    border: none;
+    padding: 1rem 7rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.amount {
+    font-size: 2rem;
+}
+
+/* aside style */
+aside {
+    background-color:hsl(179, 55%, 60%);
+    color: white
+}
+aside h3{
+    padding : 2rem;
+    padding-bottom: 0px;
+}
+aside p {
+    color: gray;
+    padding: 0rem 2rem;
+    margin: 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.attribution {
+    padding-top: 11rem;
+}
+
+/* For samll screens */
+@media screen and (max-width : 400px) {
+    .card {
+        display: block;
+        max-width: 300px;
+        margin: auto;
+        margin-top: 5rem;
+        border-radius: 1rem;
+    }  
+    header h1 {
+        font-size: 1.5rem;
+    } 
+    header h2, section h3 {
+        font-size: 1rem;
+    }
+    header p,section p, aside p {
+        font-size: 0.9rem;
+    }
+    .attribution {
+        padding-top: 6rem;
+    }
+    .grid {
+        display:grid;
+        grid-template-columns: 300px;
+    }
+    aside h3 {
+        margin: 0px;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+    section button {
+        padding: 0.8rem 5rem;
+        margin: 1rem 2rem 2rem 2rem;
+    }
+}
